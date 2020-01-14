@@ -21,8 +21,8 @@
 
 env :PATH, ENV['PATH']
 env :GEM_PATH, ENV['GEM_PATH']
-
 set :output, 'log/whenever.log'
-every 1.minute do
+
+every 10.minutes, at: 0 do
   rake "reboks:update_occupancy"
 end
