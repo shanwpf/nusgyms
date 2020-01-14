@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  time: 2020-01-13 17:20:31
+  utown: 1
+  mpsh: 1
+  usc: 1
+
+two:
+  time: 2020-01-13 17:20:31
+  utown: 1
+  mpsh: 1
+  usc: 1
