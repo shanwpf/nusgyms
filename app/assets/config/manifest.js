@@ -5,3 +5,4 @@
 //= link jquery3
 //= link popper
 //= link bootstrap-sprockets
+//= link turbolinks
