@@ -54,3 +54,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'selenium-webdriver'
 gem 'whenever'
 gem 'pg'
+gem 'jquery-rails'
+gem 'bootstrap'

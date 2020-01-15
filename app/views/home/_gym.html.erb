@@ -1,0 +1,10 @@
+<div class="row">
+  <div class="col-md-9">
+    <div id="chart-<%= gym_name %>"></div>
+  </div>
+  <div class="col-md-3 mt-3">
+    <h1 class="gym-name display-4"><%= gym_name.upcase %></h1>
+    <h1 class="gym-occupancy display-2"><%= @occupancies[gym_name] %></h1>
+    <div class="working-out">WORKING OUT NOW</div>
+  </div>
+</div>
