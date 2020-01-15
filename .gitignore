@@ -3,6 +3,7 @@ account.yml
 /config/master.key
 
 /public/packs
+/public/assets
 /public/packs-test
 /node_modules
 /yarn-error.log
