@@ -9,7 +9,7 @@ namespace :reboks do
     puts data
     Occupancy.create(
       utown: data[:utown].to_i,
-      mpsh: data[:mpsh].to_i,
+      mpsh3: data[:mpsh].to_i,
       usc: data[:usc].to_i
     )
   end

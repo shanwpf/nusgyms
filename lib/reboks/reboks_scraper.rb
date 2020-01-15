@@ -52,7 +52,7 @@ module Reboks
       
       return {
         utown: utown_occupancy.text,
-        mpsh: mpsh_occupancy.text,
+        mpsh3: mpsh_occupancy.text,
         usc: usc_occupancy.text
       }
     end
