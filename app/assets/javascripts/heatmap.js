@@ -84,9 +84,15 @@ datasets.forEach(location => {
         div.transition()		
         .duration(200)		
         .style("opacity", .9);
-        div	.html(d.avg)
+        div.html(d.avg)
         .style("left", (d3.event.pageX) + "px")		
         .style("top", (d3.event.pageY - 28) + "px");	
+      });
+
+      svg.selectAll("rect").on("mouseout", (d) => {
+        div.transition()
+        .duration(500)
+        .style("opacity", 0);
       });
       
       cards.select("title").text((d) => d.avg);

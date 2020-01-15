@@ -2,12 +2,23 @@ footer {
     background-color: #f8f9fa;
 }
 
+div.tooltip {	
+    position: absolute;			
+    text-align: center;			
+    width: 50px;					
+    height: 28px;					
+    padding: 2px;				
+    font: 20px sans-serif;		
+    background: whitesmoke;	
+    border: none;		
+    border-radius: 8px;			
+    pointer-events: none;
+    padding: 5px;			
+}
+
 .gym-name {
     font-size: 28px;
     margin-bottom: -0.5em;
     font-weight: 900;
     color: #225ea8;
-}
-
-.working-out {
 }
