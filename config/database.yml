@@ -46,7 +46,5 @@ test:
 
 production:
   adapter: postgresql
-  database: nusgyms
+  url: <%= ENV['DATABASE_URL'] %>
   pool: 5
-  username: nusgyms
-  password: <%= Rails.application.credentials.db[:password] %>
