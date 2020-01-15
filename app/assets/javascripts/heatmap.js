@@ -116,7 +116,7 @@ datasets.forEach(location => {
     });
   };
 
-  heatmapChart('occupancies');
+  heatmapChart(`occupancies/${location}`);
 });
 
 
