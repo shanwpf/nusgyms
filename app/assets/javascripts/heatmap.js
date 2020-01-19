@@ -43,6 +43,14 @@ datasets.forEach(location => {
   const div = d3.select("body").append("div")
   .attr("class", "tooltip")
   .style("opacity", 0);
+  const dayToIndex = function(day) {
+    if (day == 0) {
+      return 6;
+    } 
+    else {
+      return day - 1;
+    }
+  }
 
   const heatmapChart = function(jsonData) {
     d3.json(jsonData).then(data => {
@@ -68,7 +76,7 @@ datasets.forEach(location => {
       
       cards.enter().append("rect")
       .attr("x", (d) => (d.hour - 6) * gridSize)
-      .attr("y", (d) => (d.day - 1) * gridSize)
+      .attr("y", (d) => (dayToIndex(d.day)) * gridSize)
       .attr("rx", 4)
       .attr("ry", 4)
       .attr("class", "hour bordered")
@@ -124,15 +132,3 @@ datasets.forEach(location => {
 
   heatmapChart(`occupancies/${location}`);
 });
-
-
-// const datasetpicker = d3.select("#dataset-picker")
-//   .selectAll(".dataset-button")
-//   .data(datasets);
-
-// datasetpicker.enter()
-//   .append("input")
-//   .attr("value", (d) => "Dataset " + d)
-//   .attr("type", "button")
-//   .attr("class", "dataset-button")
-//   .on("click", (d) => heatmapChart(d));
